@@ -1,0 +1,116 @@
+/* :root {
+    --baseColor0: #fafafa;
+    --baseColor1: #222;
+
+    --baseColor2: #94da4f;
+} */
+.navbar_outer {
+    background-color: var(--baseColor1);
+    box-shadow: 0 1px 3px var(--baseColor2);
+    padding: 0.5rem 1rem;
+
+    z-index: 5;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navbar a h4 {
+    padding: 0 3vw;
+    font-weight: 700;
+    border-radius: 5px;
+    color: var(--baseColor1);
+    background-color: var(--baseColor0);
+    text-shadow: 2px 2px 1px var(--baseColor2);
+
+    border-top: 2px solid var(--baseColor2);
+    border-left: 2px solid var(--baseColor2);
+}
+
+.navbar nav {
+    flex: 1;
+    display: flex;
+}
+
+.navbar nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar nav ul a {
+    position: relative;
+    color: var(--baseColor2);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.navbar nav ul:nth-child(1) {
+    flex: 1;
+    justify-content: center;
+}
+
+.navbar nav ul:nth-child(1) li a::before {
+    content: "";
+    position: absolute;
+    background-color: var(--baseColor2);
+    height: 3.5px;
+    bottom: -0.25rem;
+    right: 0;
+    width: 0%;
+    transform-origin: right;
+    transition: 0.3s;
+}
+
+.navbar nav ul:nth-child(1) li:hover a::before {
+    right: unset;
+    left: 0;
+    width: 100%;
+}
+
+.navbar nav ul:nth-child(2) a {
+    cursor: pointer;
+    transform: translate(0px ,0px);
+    transition: 0.25s;
+}
+.navbar nav ul:nth-child(2) a:hover {
+    transform: translate(0px ,-3px);
+}
+.navbar nav ul:nth-child(2) .menu-toggle {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .navbar nav ul:nth-child(1) {
+        position: absolute;
+        background-color: var(--baseColor1);
+        box-shadow: 1px 0px 3px var(--baseColor2);
+        flex-direction: column;
+        justify-content: flex-start;
+        top: 0;
+        left: -10rem;
+        height: 100vh;
+        overflow: hidden;
+
+        padding: 1rem;
+        
+        transition: left 0.3s;
+    }
+    #showHideMenu {
+        left: 0rem;
+    }
+
+
+
+    .navbar nav ul:nth-child(2) {
+        width: 100%;
+        justify-content: right;
+    }
+    .navbar nav ul:nth-child(2) .menu-toggle {
+        display: block;
+    }
+}

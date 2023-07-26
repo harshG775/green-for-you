@@ -1,0 +1,22 @@
+/* :root {
+    --baseColor0: #fafafa;
+    --baseColor1: #222;
+
+    --baseColor2: #94da4f;
+} */
+.hero_outer {
+    padding: 4rem 1rem;
+    & img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10rem 0rem 10rem 0rem;
+    }
+}
+.hero_outer section{
+    background: linear-gradient(to left bottom, var(--baseColor2),var(--baseColor1));
+    filter: grayscale(0%) contrast(150%);
+    color: var(--baseColor0);
+    box-shadow: inset 4px -4px 5px var(--baseColor2);
+    border-radius: 2rem;
+    padding: 4rem 4vw;
+}
