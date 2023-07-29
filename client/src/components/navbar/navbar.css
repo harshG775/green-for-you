@@ -1,18 +1,31 @@
 /* :root {
     --baseColor0: #fafafa;
-    --baseColor1: #222;
+    --baseColor1: #333;
 
-    --baseColor2: #94da4f;
+    --baseColor2:#4fda8e;
 } */
 .navbar_outer {
     background-color: var(--baseColor1);
     box-shadow: 0 1px 3px var(--baseColor2);
     padding: 0.5rem 1rem;
-
     z-index: 5;
+
     position: sticky;
     top: 0;
+    transition: 0.5s;
 }
+
+#aa {
+    top: -4rem;
+    animation-delay: .5s;
+    animation: fadeIn 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 
 .navbar {
     display: flex;
@@ -92,11 +105,11 @@
         flex-direction: column;
         justify-content: flex-start;
         top: 0;
+        padding: 1rem;
         left: -10rem;
-        height: 100vh;
+        height: 110vh;
         overflow: hidden;
 
-        padding: 1rem;
         
         transition: left 0.3s;
     }

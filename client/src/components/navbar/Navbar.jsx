@@ -3,11 +3,15 @@ import "./navbar.css"
 
 export default function Navbar() {
     const [isShowing,setIsShowing]=useState(false)
+    const [isTop,setIsTop]=useState(true)
 
-
+    window.onscroll = function scrollFunction(){
+        (document.documentElement.scrollTop > 50
+            ?setIsTop(false):setIsTop(true))
+    } 
     return (
     <>
-    <header className="navbar_outer">
+    <header id={isTop?"aa" : ""} className="navbar_outer">
         <div className="navbar maxContainer">
             <a href="/"><h4>Green-For-You</h4></a>
             <nav className="navber_inner">

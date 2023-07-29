@@ -4,9 +4,9 @@
 	font-weight: 400;
 	
     --baseColor0: #fafafa;
-    --baseColor1: #222;
+    --baseColor1: #122;
 
-    --baseColor2: #94da4f;
+    --baseColor2:#4fda8e;
 
 
 	color-scheme: light dark;
@@ -25,6 +25,9 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
 }
 ul,a {
 	list-style-type: none;
@@ -171,7 +174,7 @@ a {
 }
 
 a:hover {
-	color: #abfc59;
+	color: var(--baseColor2);
 }
 
 
@@ -201,7 +204,6 @@ button:focus-visible {
 	:root {
 		--baseColor0: #333;
 		--baseColor1: #fafafa;
-		--baseColor2:#94da4f;
 	}
 
 	a:hover {
