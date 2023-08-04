@@ -5,9 +5,7 @@
 	
     --baseColor0: #fafafa;
     --baseColor1: #122;
-
     --baseColor2:#4fda8e;
-
 
 	color-scheme: light dark;
 	color: var(--baseColor0);
