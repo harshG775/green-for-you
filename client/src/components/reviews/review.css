@@ -1,0 +1,38 @@
+
+/* hero bottom carousel  */
+.carousel {
+    padding: 4rem 1rem;
+}
+.swiper-wrapper {
+    padding: 1rem 0;
+}
+.hero_carousel {
+    cursor: grab;
+}
+.hero_carousel:active {
+    cursor: grabbing;
+}
+.hero_carousel_item {
+    border-radius: 1rem;
+    overflow: hidden;
+
+
+    background-color: var(--baseColor2);
+    filter: grayscale(30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    position: relative;
+}
+.hero_carousel_item img{
+    width: 100%;
+    object-fit: contain;
+}
+.hero_carousel_item div{
+    width: 100%;
+    background-color: var(--baseColor1);
+    opacity: .8;
+    position: absolute;
+    bottom: 0;
+}
