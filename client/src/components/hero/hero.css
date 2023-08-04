@@ -103,17 +103,23 @@
 
 
 /* best_selling_plants */
-.context {
-    min-height: 300px;
-    display: grid;
-    place-content: center;
-}
 .best_selling_plants {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
     justify-items: center;
     grid-gap: 1rem;
     padding: 2rem 0;
+}
+.best_selling_plants .context {
+    min-height: 300px;
+    display: grid;
+    gap: 1.5rem;
+    place-content: center;
+}
+.best_selling_plants .context span {
+    font-size: 1.3rem;
+    font-weight: 300;
+    
 }
 
 
@@ -139,8 +145,10 @@
 /* item text */
 .best_selling_plants_item div {
     position: absolute;
-    bottom: 1rem;
-    left: 1rem;
+    bottom: 0;
+    padding: 1.2rem;
+    width: 100%;
+    background-color: var(--baseColor2);
     color: var(--baseColor1);
     font-size: 1.5rem;
 }
@@ -169,3 +177,5 @@
         grid-template-columns: 1fr;
     }
 }
+
+
