@@ -67,7 +67,7 @@ function BestSellingPlantsItem(prop) {
     const {plantImgUrl,plantName,plantPrice}=prop
     return (
         <div className="best_selling_plants_item">
-            <img src={plantImgUrl} alt="" loading="lazy" />
+            <img src={plantImgUrl} alt="" />
             <div>
                 <h6>{plantName}</h6>
                 <span><b>Rs.</b> {plantPrice}</span>
